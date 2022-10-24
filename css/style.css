@@ -154,10 +154,17 @@ section{
     height: 60px;
     padding-top: 10px;
 }
-.logo span{
+.logo{
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
     font-style: italic;
+    font-weight: 300;
+}
+.txt-red{
+  color: #ff1601;
+}
+.txt-black{
+  color: #242424;
 }
 .nav{
     display: flex;
@@ -221,9 +228,6 @@ section{
 .skills-wrapper h3{
   color: #3d3d3d;
 }
-.skills-wrapper p{
-
-}
 
 /*===========ABOUT SECTION===============*/
 .about-img{
@@ -272,13 +276,50 @@ section{
   margin-bottom: 80px;
 }
 .contact{
-  background-color: #00dec8;
+  /* background-color: rgba(17, 255, 231, 0.527); rgb(17 255 79 / 53%) */
+  background:linear-gradient(to right,rgba(17, 255, 79, 0.527),rgba(255, 0, 232, 0.3));
   padding: 50px;
   color: #363636;
   border-radius: 11px;
+  position: relative;
 }
-.contact h1 {
-
+.contact video {
+  background: brown;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 11px;
+}
+.contact-right{
+  background-color: rgb(255, 255, 255, .5);
+  height: 100%;
+  margin: 0 30px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.contact-wrapper{
+  color: rgb(56, 56, 56);
+}
+.contact-wrapper a{
+  color: rgb(56, 56, 56);;
+}
+.contact-wrapper h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.contact-row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.contact-row ion-icon{
+  margin-right: 10px;
 }
 .contact p{
   margin-top: 10px;
@@ -311,4 +352,58 @@ form{
 .form-group input:focus{
   outline: none;
   border-color: #be5800;
+}
+.form-group button{
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border:  1px solid transparent;
+  font-size: 18px;
+  color: inherit;
+  border-radius: 9px;
+  margin-top: 40px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.form-group button:hover{
+  color: #00dec8;
+}
+
+/* FOOTER */
+footer{
+  margin-top: 80px;
+  background-color: #f9f9f9;
+}
+.footer-top{
+  padding: 50px 0;
+}
+.footer-nav{
+  list-style: none;
+}
+.footer-nav-item{
+  margin-bottom: 20px;
+}
+.footer-nav-link{
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+}
+.footer-bottom{
+  padding: 25px 0;
+  background-color: #ebebeb;
+}
+.footer-btm-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contact{
+  display: flex;
+  align-items: center;
+}
+.heart{
+  color: #ff1601;
+}
+.footer-contact a{
+  color: #07bb2d;
+  text-decoration: none;
 }
