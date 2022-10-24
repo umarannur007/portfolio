@@ -16,7 +16,7 @@ body{
 }
 /* REUSEABLE STYLES */
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .btn-black{
@@ -196,6 +196,7 @@ section{
     letter-spacing: 5px;
     margin-bottom: 30px;
 }
+
 .header-text span{
     display: block;
     font-size: 33px;
